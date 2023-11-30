@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/PortfolioPWA/static/css/main.b3f67a94.css",
-    "main.js": "/PortfolioPWA/static/js/main.a807a5f5.js",
-    "static/media/hero-img.png": "/PortfolioPWA/static/media/hero-img.1486dd5b233d588070eb.png",
-    "static/media/about-me.jpg": "/PortfolioPWA/static/media/about-me.989cddfb776989c83bc0.jpg",
-    "static/media/work5.jpg": "/PortfolioPWA/static/media/work5.423cb5fa6f17289d7a22.jpg",
-    "static/media/work6.jpg": "/PortfolioPWA/static/media/work6.4f661f619197805f96f5.jpg",
-    "static/media/work4.png": "/PortfolioPWA/static/media/work4.ce9842ae6983a455d23a.png",
-    "static/media/work2.png": "/PortfolioPWA/static/media/work2.82fe94bf0d5ee7798aa2.png",
-    "static/media/work1.png": "/PortfolioPWA/static/media/work1.cbe39e97a8bfd419f337.png",
-    "static/media/ProjectPlan-Sinq.pdf": "/PortfolioPWA/static/media/ProjectPlan-Sinq.da0739b9f04618068a36.pdf",
-    "static/media/Poppins-Regular.ttf": "/PortfolioPWA/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
-    "static/media/ReadingGuide1.pdf": "/PortfolioPWA/static/media/ReadingGuide1.2bc21010f6b911fc709d.pdf",
-    "static/media/work3.jpg": "/PortfolioPWA/static/media/work3.b8147d438cbe9f85ea2d.jpg",
-    "static/media/Assignment1-research.pdf": "/PortfolioPWA/static/media/Assignment1-research.46f30dd0a3e01c74ab33.pdf",
-    "index.html": "/PortfolioPWA/index.html",
-    "main.b3f67a94.css.map": "/PortfolioPWA/static/css/main.b3f67a94.css.map",
-    "main.a807a5f5.js.map": "/PortfolioPWA/static/js/main.a807a5f5.js.map"
+    "main.css": "/static/css/main.d1db22c1.css",
+    "main.js": "/static/js/main.f108d24e.js",
+    "static/media/work1.png": "/static/media/work1.f9e5a80a697a50308039.png",
+    "static/media/hero-img.png": "/static/media/hero-img.1486dd5b233d588070eb.png",
+    "static/media/about-me.jpg": "/static/media/about-me.989cddfb776989c83bc0.jpg",
+    "static/media/work6.jpg": "/static/media/work6.423cb5fa6f17289d7a22.jpg",
+    "static/media/work7.jpg": "/static/media/work7.4f661f619197805f96f5.jpg",
+    "static/media/work5.png": "/static/media/work5.ce9842ae6983a455d23a.png",
+    "static/media/work3.png": "/static/media/work3.82fe94bf0d5ee7798aa2.png",
+    "static/media/work2.png": "/static/media/work2.cbe39e97a8bfd419f337.png",
+    "static/media/ProjectPlan-Sinq.pdf": "/static/media/ProjectPlan-Sinq.da0739b9f04618068a36.pdf",
+    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/ReadingGuide1.pdf": "/static/media/ReadingGuide1.2bc21010f6b911fc709d.pdf",
+    "static/media/work4.jpg": "/static/media/work4.b8147d438cbe9f85ea2d.jpg",
+    "static/media/Assignment1-research.pdf": "/static/media/Assignment1-research.46f30dd0a3e01c74ab33.pdf",
+    "index.html": "/index.html",
+    "main.d1db22c1.css.map": "/static/css/main.d1db22c1.css.map",
+    "main.f108d24e.js.map": "/static/js/main.f108d24e.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3f67a94.css",
-    "static/js/main.a807a5f5.js"
+    "static/css/main.d1db22c1.css",
+    "static/js/main.f108d24e.js"
   ]
 }
