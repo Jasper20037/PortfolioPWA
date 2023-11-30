@@ -1,0 +1,69 @@
+/* Styling for main part of the page */
+.work__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em;
+}
+
+.portfolio__item {
+    background-color: var(--background-color-alt);
+    padding: 1.2em;
+    border-radius: 2em;
+    border: 1px solid transparent;
+}
+
+.portfolio__item:hover {
+    border-color: var(--primary-color-alt);
+    background: transparent;
+}
+
+.portfolio__item-img {
+    border-radius: 1.5em;
+    overflow: hidden;
+}
+
+.portfolio__item-img img {
+    height: 15em;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio__item>.head-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.2em  0 2em;
+}
+
+.head-text small {
+    color: var(--primary-color);
+    font-size: .8em;
+}
+
+.portfolio__item-cta {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+/* ? Media Queries to make website responsive */
+
+/* Medium devices (Tablet etc.) */
+@media screen and (max-width: 1024px) {
+    /* Styling set different if above size is met */
+    .work__container
+    {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2em;
+    }
+}
+
+/* Small devices (Smartphone etc.) */
+@media screen and (max-width: 600px) {
+    /* Styling set different if above size is met */
+    .work__container
+    {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+}

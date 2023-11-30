@@ -1,0 +1,113 @@
+/* Styling for About page */
+.about__container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+
+.about__me {
+    width: 100%;
+    /* Height is always going to be even to the width (a square) */
+    aspect-ratio: 1/1;
+    border-radius: 2em;
+    /* Linear background color with a rotation of 45 degrees that goes from transparent to the primary color to transparent */
+    background: linear-gradient(45deg, transparent, var(--primary-color), transparent);
+    display: grid;
+    place-items: center;
+}
+
+.about__me-img {
+    border-radius: 2rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--main-transition);
+}
+
+.about__me-img:hover {
+    transform: rotate(0deg);	
+}
+
+.about__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+}
+
+.about__card {
+    background-color: var(--background-color-alt);
+    border: 1px solid transparent;
+    border-radius: 1em;
+    padding: 2em;
+    text-align: center;
+    transition: var(--main-transition);
+}
+
+.about__card:hover {
+    background: transparent;
+    border-color: var(--primary-color-alt);
+    transition: var(--main-transition);
+    cursor: default;
+}
+
+.about__icon {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1em;
+}
+
+.about__card h5 {
+    font-size: 0.95rem;
+}
+
+.about__card small {
+    font-size: .7rem;
+    color: var(--light);
+}
+
+.about__content p{
+    margin: 2em 0 2.5em 0;
+    color: var(--light);
+}
+
+/* ? Media Queries to make website responsive */
+
+/* Medium devices (Tablet etc.) */
+@media screen and (max-width: 1024px) {
+    /* Styling set different if above size is met */
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about__me {
+        width: 50%;
+        margin: 2em auto 4rem;
+    }
+
+    .about__content p {
+        margin: 1em 0 1.5em;
+    }
+}
+
+/* Small devices (Smartphone etc.) */
+@media screen and (max-width: 600px) {
+    /* Styling set different if above size is met */
+    .about__me {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .about__cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .about__content {
+        text-align: center;
+    }
+
+    .about__content p {
+        margin: 1.5em 0 ;
+    }
+}

@@ -1,0 +1,26 @@
+/* Styling for contact page */
+.contact__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+    align-items: center;
+    justify-items: center;
+}
+
+.contact__option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: var(--background-color-alt);
+    border: 1px solid transparent;
+    transition: var(--main-transition);
+}
+
+.contact__option:hover {
+    background-color: transparent;
+    border-color: var(--primary-color-alt);
+}

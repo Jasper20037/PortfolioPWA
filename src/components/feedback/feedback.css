@@ -1,0 +1,62 @@
+/* Styling for tesimonials component */
+.container.testimonial__container {
+    width: 40%;
+    padding-bottom: 4em;
+}
+
+.testimonial {
+    background-color: var(--background-color-alt);
+    text-align: center;
+    padding: 2em;
+    border-radius: 2em;
+    /* This way the user is not able to select the text */
+    user-select: none;
+}
+
+.testimonial h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.teacher__feedback {
+    color: var(--light);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: .8em auto 0;
+}
+
+.testimonial__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-top: 1.5em;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.319);
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background-color: var(--primary-color);
+}
+
+/* ? Media Queries to make website responsive */
+
+/* Medium devices (Tablet etc.) */
+@media screen and (max-width: 1024px) {
+    /* Styling set different if above size is met */
+    .container.testimonial__container {
+        width: 60%;
+    }
+}
+
+/* Small devices (Smartphone etc.) */
+@media screen and (max-width: 600px) {
+    /* Styling set different if above size is met */
+    .container.testimonial__container {
+        width: var(--container-width-small);
+    }
+
+    .teacher__feedback {
+        width: var(--container-width-small);
+    }
+}

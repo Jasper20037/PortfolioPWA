@@ -1,0 +1,39 @@
+/* Styling for floating navigation */
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7em 1.7em;
+    /* Put it on top */
+    z-index: 2;
+    /* stays where it is */
+    position: fixed;
+    /* center */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2em;
+    display: flex;
+    gap: .8em;
+    border-radius: 3em;
+    /* Makes the background blurry in this case */
+    backdrop-filter: blur(15px);
+}
+
+nav a {
+    background: transparent;
+    padding: .9em;
+    border-radius: 50%;
+    display: flex;
+    color: var(--light);
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Styling of the button that is active */
+nav a.active {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}

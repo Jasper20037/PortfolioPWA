@@ -1,0 +1,78 @@
+/* Styling for service part of the page */
+.services__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3em;
+}
+
+.service {
+    background-color: var(--background-color-alt);
+    border-radius: 0 0 2em 2em;
+    border: 1px solid var(--primary-color);
+    height: fit-content;
+    transition: var(--main-transition);
+}
+
+.service:hover {
+    background: transparent;
+    border-color: var(--primary-color-alt);
+    cursor: default;
+}
+
+.service__head {
+    background-color: var(--primary-color);
+    padding: 2em;
+    border-radius: 0 0 2em 2em;
+    box-shadow: 0 2em 1em rgba(0, 0, 0, 0.1);
+}
+
+.service__head h3 {
+    color: var(--background-color);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.service__list {
+    padding: 2em;
+}
+
+.service__list li {
+    display: flex;
+    
+    gap: 1em;
+    margin-bottom: .8em;
+}
+
+.service__list-icon {
+    color: var(--primary-color);
+}
+
+.service__list p {
+    font-size: .9em;
+}
+
+/* ? Media Queries to make website responsive */
+
+/* Medium devices (Tablet etc.) */
+@media screen and (max-width: 1024px) {
+    /* Styling set different if above size is met */
+    .services__container
+    {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+    }
+
+    .service {
+        height: auto;
+    }
+}
+
+/* Small devices (Smartphone etc.) */
+@media screen and (max-width: 600px) {
+    /* Styling set different if above size is met */
+    .services__container
+    {
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+}

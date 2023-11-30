@@ -1,0 +1,75 @@
+/* Styling for experience part of the page */
+.experience__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.experience__container>article {
+    background-color: var(--background-color-alt);
+    padding: 2.5em 5em;
+    border-radius: 2em;
+    border: 1px solid transparent;
+    transition: var(--main-transition);
+}
+
+.experience__container>article:hover {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    cursor: default;
+}
+
+.experience__container>article h3 {
+    text-align: center;
+    margin-bottom: 2em;
+    color: var(--primary-color);
+}
+
+.experience__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2em;
+}
+
+.experience__details {
+    display: flex;
+    gap: 1em;
+}
+
+.experience__details-icon {
+    margin-top: 5px;
+    color: var(--primary-color);
+}
+
+/* ? Media Queries to make website responsive */
+
+/* Medium devices (Tablet etc.) */
+@media screen and (max-width: 1024px) {
+    /* Styling set different if above size is met */
+    .experience__container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience__container>article {
+        width: 80%;
+        padding: 2em;
+        margin: 0 auto;
+    }
+
+    .experience__content {
+        padding: 1em;
+    }
+}
+
+/* Small devices (Smartphone etc.) */
+@media screen and (max-width: 600px) {
+    /* Styling set different if above size is met */
+    .experience__container {
+        gap: 1em;
+    }
+
+    .experience__container>article {
+        width: 100%;
+        padding: 2em 1em;
+    }
+}
